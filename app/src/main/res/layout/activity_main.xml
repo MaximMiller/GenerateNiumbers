@@ -17,7 +17,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/min"
+        android:id="@+id/min_edit"
+        android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Min"
@@ -27,6 +28,8 @@
         app:layout_constraintTop_toTopOf="@id/textResult" />
 
     <EditText
+        android:id="@+id/max_edit"
+        android:inputType="number"
         android:hint="Max"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,12 +39,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/result_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESULT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/min" />
+        app:layout_constraintTop_toBottomOf="@+id/min_edit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
